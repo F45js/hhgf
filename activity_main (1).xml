@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00529C"
+            android:padding="18dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="BRI"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:textColor="#00529C"
+                android:textStyle="bold"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="14dp"
+                android:text="Notifikasi"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:text="Semua Notifikasi"
+            android:textColor="#1A1A1A"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/notifContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:id="@+id/detailPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:elevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00529C"
+                android:padding="22dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dana Masuk"
+                    android:textColor="#DDE8F5"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/detailNominal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rp 0"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaksi Berhasil"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11sp"
+                    android:background="#33FFFFFF"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="4dp"
+                    android:layout_marginTop="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="18dp"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="10dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Nama Pengirim" android:textColor="#9AA0A6" android:textSize="12sp"/>
+                    <TextView android:id="@+id/detailSender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#1A1A1A" android:textSize="12sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="10dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Bank Asal" android:textColor="#9AA0A6" android:textSize="12sp"/>
+                    <TextView android:id="@+id/detailBank" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#1A1A1A" android:textSize="12sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="10dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="No. Referensi" android:textColor="#9AA0A6" android:textSize="12sp"/>
+                    <TextView android:id="@+id/detailRef" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#1A1A1A" android:textSize="12sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="10dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Waktu" android:textColor="#9AA0A6" android:textSize="12sp"/>
+                    <TextView android:id="@+id/detailTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#1A1A1A" android:textSize="12sp" android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="10dp" android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Saldo Akhir" android:textColor="#9AA0A6" android:textSize="12sp"/>
+                    <TextView android:id="@+id/detailSaldo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#1A1A1A" android:textSize="12sp" android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="18dp"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KONFIGURASI NOTIFIKASI" android:textStyle="bold" android:textColor="#1A1A1A" android:textSize="12sp" android:layout_marginBottom="12dp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama Pengirim" android:textSize="11sp" android:textColor="#5F6368"/>
+            <EditText android:id="@+id/inputSender" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Budi Santoso" android:inputType="text" android:textSize="13sp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No. Rekening Penerima" android:textSize="11sp" android:textColor="#5F6368" android:layout_marginTop="8dp"/>
+            <EditText android:id="@+id/inputRekening" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="123456789012345" android:inputType="number" android:textSize="13sp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nominal (Rp)" android:textSize="11sp" android:textColor="#5F6368" android:layout_marginTop="8dp"/>
+            <EditText android:id="@+id/inputAmount" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="750000" android:inputType="number" android:textSize="13sp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bank Asal" android:textSize="11sp" android:textColor="#5F6368" android:layout_marginTop="8dp"/>
+            <Spinner android:id="@+id/inputBank" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No. Referensi" android:textSize="11sp" android:textColor="#5F6368" android:layout_marginTop="8dp"/>
+            <EditText android:id="@+id/inputRef" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="BR-2024-88271" android:inputType="text" android:textSize="13sp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo Akhir (Rp)" android:textSize="11sp" android:textColor="#5F6368" android:layout_marginTop="8dp"/>
+            <EditText android:id="@+id/inputSaldo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2450000" android:inputType="number" android:textSize="13sp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KET." android:textSize="11sp" android:textColor="#5F6368" android:layout_marginTop="8dp"/>
+            <EditText android:id="@+id/inputKet" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Kosongkan untuk otomatis" android:inputType="text" android:textSize="13sp"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MUNCUL" android:textSize="11sp" android:textColor="#5F6368" android:layout_marginTop="8dp"/>
+            <EditText android:id="@+id/inputMuncul" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Kosongkan untuk otomatis" android:inputType="text" android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnKirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Kirim Notifikasi"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:backgroundTint="#00529C"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
